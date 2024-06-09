@@ -17,10 +17,11 @@ use App\Http\Controllers\CatalogController;
 /*Route::get('/', function () {
     return view('home');
 });*/
+
 Route::get('/', [HomeController::class, 'getHome']);
 
 Route::get('login', function () {
-    return view('auth.login') ;
+    return view('auth.login');
 });
 
 Route::get('logout', function () {
@@ -44,5 +45,3 @@ Route::get('catalog/create', [CatalogController::class, 'getCreate']);
     return view('catalog.edit', array('id'=>$id));
 });*/
 Route::get('catalog/edit/{id}', [CatalogController::class, 'getEdit']);
-
-

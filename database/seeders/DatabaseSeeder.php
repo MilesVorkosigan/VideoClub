@@ -20,5 +20,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        self::seedCatalog();
+$this->command->info('Tabla catálogo inicializada con datos!');
     }
 }
